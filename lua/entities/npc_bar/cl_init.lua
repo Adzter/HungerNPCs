@@ -21,7 +21,7 @@ surface.CreateFont( "foodEnergy", {
 	antialias = true, 
 } )
 
-net.Receive( "sendChefMenu", function()	
+net.Receive( "sendBarMenu", function()	
 	DFrame = vgui.Create( "DFrame" )
 	DFrame:SetSize( 500, 350 )
 	DFrame:Center()
@@ -40,7 +40,7 @@ net.Receive( "sendChefMenu", function()
 
 	local panelCount = -0.6
 	for k,v in pairs(FoodItems) do
-		if table.HasValue( hungerConfig.chefItems, v["name"] ) then
+		if table.HasValue( hungerConfig.barItems, v["name"] ) then
 			panelCount = panelCount + 1
 			
 			-- Increment the height by multiplying by the current count
@@ -72,7 +72,7 @@ net.Receive( "sendChefMenu", function()
 				
 				-- Send the request to be dealt with serverside
 				-- Don't need to include the price, we can check serverside
-				net.Start("buyFood")
+				net.Start("buyDrink")
 					net.WriteString( v["name"] )
 				net.SendToServer()
 			end

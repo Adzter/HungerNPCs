@@ -20,13 +20,13 @@ hungerConfig.chefModel = "models/Humans/Group02/Female_02.mdl"
 hungerConfig.barModel = "models/Humans/Group02/male_02.mdl"
 
 -- List the names of all the items that should be on sale here
-hungerConfig.chefItems {
+hungerConfig.chefItems = {
 	"Banana",
 	"Bunch of bananas",
 	"Melon",
 	"Orange"
 }
-hungerConfig.barItems {
+hungerConfig.barItems = {
 	"Glass bottle",
 	"Pop can",
 	"Plastic bottle",
