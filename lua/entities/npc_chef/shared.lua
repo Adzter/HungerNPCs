@@ -1,4 +1,4 @@
-ENT.Base = "base_gmodentity" 
-ENT.Type = "anim"
+ENT.Base = "base_ai" 
+ENT.Type = "ai"
 ENT.PrintName = "Chef NPC"
 ENT.Author = "Adzter"
