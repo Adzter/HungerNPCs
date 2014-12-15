@@ -11,7 +11,7 @@ function ENT:Initialize()
 	self:SetUseType( SIMPLE_USE )
 	self:SetAnimation( 0 )
 	
-	self:SetMoveType(MOVETYPE_NONE)
+	self:SetMoveType( MOVETYPE_STEP )
 	self:SetSolid( SOLID_BBOX )
 	self:SetCollisionGroup(COLLISION_GROUP_PLAYER)
 end
