@@ -63,7 +63,7 @@ net.Receive("buyFood", function( len, ply )
 				SpawnedFood.FoodName = v["name"]
 				SpawnedFood.FoodEnergy = v["energy"]
 				SpawnedFood.FoodPrice = v["price"]
-				SpawnedFood:SetCollisionGroup( COLLISION_GROUP_WORLD )
+				SpawnedFood:SetCollisionGroup( COLLISION_GROUP_DEBRIS )
 				SpawnedFood:Spawn()
 			end
 		end
